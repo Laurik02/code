@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Amazon Ember",Arial,sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.body {
+    padding: 30px;
+    font-family: montserrat;
+    min-height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    background-color: rgb(5, 7, 8);
+}
+
+.container-fluid .header-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#fff;
+    width: 100%;
+    height: 55px;
+}
+.container-fluid .header-1 ul{
+    display: inline;
+}
+.container-fluid .header-1 ul li{
+    padding: 10px;
+}
+.container-fluid .header-1 .logo{
+    color:rgb(104, 252, 183);
+    font-size: 50px;
+    font-family: montserrat;
+}
+  
+.container-fluid .header-1 form{
+    display: flex;
+}
+  
+.container-fluid .header-1 form #search{
+    height: 40px;
+    width: 450px;
+    background:none;
+    outline: none;
+    border:2px solid rgb(68, 185, 68);
+    color:#333;
+    padding:0 10px;
+    font-size: 17px;
+    border-radius: 25px 0 0 25px;
+}
+  
+.container-fluid .header-1 form label{
+    height: 40px;
+    width: 70px;
+    background:rgb(68, 185, 68);
+    color:#fff;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 0 25px 25px 0;
+}
+  
+.container-fluid .header-1 form label:hover{
+    color:#fff8;
+}
+
+.container-fluid .header-2 {
+    background-color: rgb(245, 188, 113);
+    text-align: center;
+    width: 100%;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+  
+section{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-box {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-box .side-menu {
+    width: 500px;
+    height: 150%;
+    background: white;
+    padding-right: 30px;
+    margin-left: -10px;
+}
+
+.main-box .side-menu ul li {
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0, 1);
+    border-top: 1px solid rgb(68, 185, 68);
+}
+.main-box .side-menu ul li a{
+    color: #0c0c0c;
+    display: block;
+}
+.main-box .side-menu ul li a .fas{
+    width: 25px;
+}
+.main-box .side-menu ul li:hover{
+    background: #40b35d;
+}
+.main-box .side-menu ul li:hover a{
+    color: #fff;
+}
+.main-box .container-product{    
+    width: 400%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+.container-product h2 {
+    position: relative;
+    top: 20px;
+    width: 500px;
+    text-align: left ;
+    font-size: 20px;
+    /*padding: 5px;*/
+    height: 40px;
+    background: rgb(255, 255, 255);
+}
+.container-product h2 ::after {
+    content: "";
+}
+.images {
+    height: 300px;
+    width: 110%;
+    object-fit: scale-down;
+    object-position:  center;
+}
+.row {
+    margin-top: 30px;
+}
+
+.overlay {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    margin-left: 0;
+    width: 70px;
+}
+
+.first-product :hover .overlay {
+    opacity: 1;
+    margin-left: 25%;
+    transition: 0.5s;
+}
+
+.overlay .fa {
+    cursor: pointer;
+    background-color: rgb(255, 255, 240);
+    color: #000;
+    height: 35px;
+    width: 35px;
+    font-size: 0px;
+    padding: 7px;
+    margin: 5%;
+    margin-bottom: 5%;
+}
+.col-sm {
+    width: 30%; 
+    border-radius: 7px;
+    margin: 2 15px;
+    /* background-color: #fff; */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0, 1);
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200px;
+    font-size: 16px;
+}
+.product-bottom h5 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.product-buttom .fa {
+    color: rgb(100, 98, 0);
+    font-size: 10px;
+}
+.product-buttom button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: rgb(58, 55, 54);
+    background-color: rgb(245, 188, 113);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .product-buttom button:hover {
+    opacity: 0.7;
+  }
+  .categorie{
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .nav-items li {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 0 4px;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: rgb(36, 32, 32);
+}
+
+.nav-items li a:hover {
+    color: black;
+}

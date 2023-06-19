@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/6b40de8f9d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="top-nav">
+            <a href="#" class="logo"> YOTOS </a>
+
+            <form action="">
+                <div class="search-box">
+                    <input type="search" placeholder="search here" id="search">
+                    <label for="search"><i class="fas fa-search icon-search"></i></label>
+                </div>
+            </form>
+            
+            <div class="nav-items">
+                <div class="action">
+                    <div class="intro">
+                        <ul>
+                            <li id="profile"><a href="#"><i class="fa-sharp fa-solid fa-user"></i> Hi, Glens</a> 
+                                <i class="fa-solid fa-caret-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="menu" class="menu">
+                        <ul>
+                            <li><i class="fa-regular fa-user"></i><a href="details.htmlss">My profile</a></li>
+                            <li><i class="fa-regular fa-pen-to-square"></i><a href="details.html">Edit profile</a></li>
+                            <li><i class="fa-solid fa-cart-shopping"></i><a href="order.html"> Orders</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="intro">
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-nav">
+            <div class="profile">
+                <ul>
+                    <li>
+                        <a href="#" class="name">
+                            <img src="images (2).jpeg" alt="">
+                            <span class="dash_items"> Glens Mori</span>
+                            <hr id="profile-line">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details.html">
+                            <i class="fa-regular fa-id-badge"></i>
+                            <span class="dash_items">Account Details</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <span class="dash_items">Payments Details</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="order.html">
+                            <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                            <span class="dash_items">Orders Details</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="logout">
+                            <hr id="profile-line" style="width: 145%;">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span class="dash_items">Log Out</span>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <span id="line-separator"></span>
+
+        <div class="details">
+
+            <div class="Order">
+                <strong id="order-title"> Order Management </strong>
+                
+                <div id="order-menu" >
+                    <a href="#">Filter </i>
+                        <select name="order_status">
+                            <option value="all">All Orders</option>
+                            <option value="completed">Completed Orders</option>
+                            <option value="pending">Pending Orders</option>
+                            <option value="cancelled">Cancelled Orders</option>
+                            <option value="pending">Processing Orders</option>
+                            <option value="pending">Deleted Orders</option>
+                        </select>
+                    </a>
+                </div>
+                
+                <section class="attendance">
+                    <div class="attendance-list">
+                       <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Order ID</th>
+                            <th>Product Name</th>
+                            <th>Sales Channel</th>
+                            <th>Date</th>
+                            <th>Qty</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>#1234</td>
+                            <td>Aloe Vera</td>
+                            <td>Herbal garden</td>
+                            <td>03-24-22</td>
+                            <td>8</td>
+                            <td>GH¢ 370</td>
+                            <td><button class="pending">Pending </button></td>
+                          </tr>
+                          <tr class="active">
+                            <td>#2351</td>
+                            <td>Chamomille</td>
+                            <td>NSP Herbals& More</td>
+                            <td>03-24-22</td>
+                            <td>9</td>
+                            <td>GH¢ 400</td>
+                            <td><button class="completed">Completed</button></td>
+                          </tr>
+                          <tr>
+                            <td>#7645</td>
+                            <td>Garlic</td>
+                            <td>Natural Way</td>
+                            <td>03-24-22</td>
+                            <td>2</td>
+                            <td>GH¢ 150</td>
+                            <td><button class="cancelled">Cancelled</button></td>
+                          </tr>
+                          <tr>
+                            <td>#5747</td>
+                            <td>Yerba Buena </td>
+                            <td>Natural Way</td>
+                            <td>03-24-22</td>
+                            <td>3</td>
+                            <td>GH¢ 200</td>
+                            <td><button class="pending">Pending </button></td>
+                          </tr>
+                          <tr>
+                            <td>#4689</td>
+                            <td>Sambong </td>
+                            <td>Tinatett Herbal </td>
+                            <td>03-24-22</td>
+                            <td>4</td>
+                            <td>GH¢ 230</td>
+                            <td><button class="pending">Pending </button></td>
+                          </tr>
+                          <tr>
+                            <td>#7645</td>
+                            <td>Garlic</td>
+                            <td>Natural Way</td>
+                            <td>03-24-22</td>
+                            <td>2</td>
+                            <td>GH¢ 150</td>
+                            <td><button class="cancelled">Cancelled</button></td>
+                          </tr>
+                          <tr class="active">
+                            <td>#2351</td>
+                            <td>Chamomille</td>
+                            <td>NSP Herbals& More</td>
+                            <td>03-24-22</td>
+                            <td>9</td>
+                            <td>GH¢ 400</td>
+                            <td><button class="completed">Completed</button></td>
+                          </tr>
+                          <tr class="active">
+                            <td>#2351</td>
+                            <td>Chamomille</td>
+                            <td>NSP Herbals& More</td>
+                            <td>03-24-22</td>
+                            <td>9</td>
+                            <td>GH¢ 400</td>
+                            <td><button class="cancelled">Cancelled</button></td>
+                          </tr>
+                          <tr class="active">
+                            <td>#2351</td>
+                            <td>Chamomille</td>
+                            <td>NSP Herbals& More</td>
+                            <td>03-24-22</td>
+                            <td>9</td>
+                            <td>GH¢ 400</td>
+                            <td><button class="completed">Completed</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+            </div>
+        </div>
+
+        <div class="social_medias">
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        var menu = document.getElementById("menu");
+        var profile = document.getElementById("profile");
+
+        var count = 0;
+
+        profile.addEventListener("click", () => {
+            // each time the user click the profile, increment
+            count++;
+
+            // if the count is odd, display the menu item
+            // else, don't display it
+            if (count % 2 == 0) {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
